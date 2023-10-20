@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+:root {
+    --primary-cyan: #2ab2af;
+    --neutral-cyan: #56c0be;
+    --primary-bright-yellow: #c0df34;
+    --neutral-light-gray: #e5eff5;
+    --neutral-grayish-blue: #98a6bd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: var(--neutral-light-gray);
+    padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: var(--primary-bright-yellow);
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 0;
+    color: #fff;
+    font-weight: 400;
+    box-shadow: 0 8px 010px rgba(123, 123, 123, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: var(--neutral-grayish-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#card-content {
+    background: #fff;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 8px 010px rgba(172, 172, 172, 0.5);
+}
+
+#card-content .card-community {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+#card-content .card-community h2 {
+    color: var(--primary-cyan);
+    margin-bottom: 0.9rem;
+}
+
+#card-content .card-community h3 {
+    color: var(--primary-bright-yellow);
+    margin-bottom: 0.5rem
+}
+
+#card-content .card-community p {
+    color: var(--neutral-grayish-blue);
+}
+
+#card-content .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+
+#card-content .card-subscription {
+    background: var(--primary-cyan);
+    padding: 2rem;
+}
+
+#card-content .card-subscription h4 {
+    margin: 0.9rem 0 0.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+#card-content .card-subscription h4 span {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-right: 0.5rem;
+}
+
+#card-content .card-subscription .btn {
+    margin-top: 1.5rem;
+}
+
+#card-content .card-why-us {
+    background: var(--neutral-cyan);
+    padding: 2rem;
+}
+
+#card-content .card-why-us h3 {
+    margin-bottom: 0.9rem;
+}
+
+#card-content .card-why-us p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media(max-width: 750px) {
+    #card-content .info {
+        display: block;
+    }
+}
